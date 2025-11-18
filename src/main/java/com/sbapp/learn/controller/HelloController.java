@@ -9,4 +9,15 @@ public class HelloController {
     public String index(){
         return "Greetings from Nagesh!";
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello World!";
+    }
+
+    @PostMapping("/post")
+    public String postExample(){
+        return "This is a POST example!";
+    }
+
 }
